@@ -1,0 +1,313 @@
+head, body, ul, li, h3 {
+    margin: 0;
+    padding: 0;
+}
+body * {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.logo {
+    width: 100%;
+    max-width: 230px;
+    margin-right: 132px;
+    margin-left: 76px;
+}
+.logo > img {
+    max-width: 100%;
+}
+header {
+    background: #111b26;
+    padding: 10px 0 5px;
+    border-bottom: 1px solid #66717e;
+    margin-bottom: 15px;
+}
+.container {
+    width: 100%;
+    max-width: 1024px; /*максимальная ширина может иметь другое значение*/
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    max-width: 585px;
+    color: #17d4fb;
+    font-size: 18px;
+}
+.wrapper {
+    min-height: 400px;
+    background: url(../img/bg-data.png) 50% 0% no-repeat;
+}
+body {
+    background: #1e2736 url(../img/mountain.jpg) 50% 0% no-repeat;
+    background-size: 100%;
+}
+video {
+    width: 100%;
+    max-width: 970px;
+    margin: 20px auto;
+    
+}
+.volume {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: calc(50% - 80px);
+    left: calc(50% - 80px);
+    z-index: 1;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    animation: pulse 1s linear infinite;
+}
+.volume p {
+    margin: 0;
+}
+
+p {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-bottom: -10px;
+}
+.name {
+    min-width: 35px;
+    min-height: 50px;
+    background-color: #d1d1d1;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-group-name {
+    display: flex;
+}
+.form-control {
+    min-width: 325px;
+    min-height: 50px;
+    padding: 12px;
+    border: none;
+    outline: 0;
+}
+.form-control:focus {
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+    border: 1px solid #66afe9;
+}
+.input-group-mail {
+    display: flex;
+    margin-left: 30px; 
+}
+.menu {
+    display: flex;
+}
+.video {
+    text-align: center;
+    position: relative;
+}
+.button-green {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    margin: 1em auto;
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background: #0ada14;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 57%), inset 0 2px 0 0 rgb(255 255 255 / 30%);
+}
+.button-green:hover {
+    box-shadow: none;
+}
+.vip {
+    max-width: 750px;
+    max-height: 50px;
+    margin: 0 auto;
+}
+.trused {
+    display: inline-block;
+    margin: .8em;
+    max-width: calc(20% - 1.8em);
+    vertical-align: middle;
+    text-align: center;
+}
+.logos {
+    margin: 0 auto;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+.contact {
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+.contact a {
+    color: #fff;
+    font-size: .8em;
+    display: inline-block;
+    margin: 3px 10px;
+    text-decoration: none;
+}
+.copyright {
+    color: #fff;
+    font-size: .8em;
+    text-align: center;
+}
+footer {
+    background: #111b26;
+    padding: 13px 0;
+    border-top: 1px solid #66717e;
+}
+.online {
+    position: fixed;
+    bottom: 15px;
+    left: 10px;
+    width: 170px;
+    height: 68px;
+    z-index: 500;
+}
+.labels {
+    margin: 7px 0;
+    border-radius: 8px;
+    border: 2px dashed;
+    font-weight: 400;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.pin {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 68px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    line-height: 58px;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 3px;
+}
+
+.online .labels span {
+    color: #17d4fb;
+}
+.online .labels {
+    border-color: #17d4fb;
+    padding-left: 35px;
+    margin-left: 30px;
+}
+.online .pin {
+    left: 0;
+    background: url(../img/pin-online.png) 50% 50% no-repeat;
+    color: #17d4fb;
+}
+.slots {
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    width: 170px;
+    height: 68px;
+    z-index: 500;
+}
+.slots .pin {
+    right: 0;
+    background: url(../img/pin-slots.png) 50% 50% no-repeat;
+    color: #11cc1a;
+}
+.pin {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 68px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+    line-height: 58px;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 3px;
+}
+.slots .labels {
+    border-color: #11cc1a;
+    padding-right: 35px;
+    margin-right: 30px;
+}
+.labels {
+    margin: 7px 0;
+    border-radius: 8px;
+    border: 2px dashed;
+    font-weight: 400;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+li:before {
+    content: "\f028"; /* добавляем иконку дом */
+    font-family: FontAwesome;
+    margin-right: 10px; 
+    }
+.fas {
+    color: #fff;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+@media screen and (max-width: 810px) {
+    .row {
+        flex-direction: column;
+    }
+    .menu {
+        display: block;
+        width: 100%;
+        min-height: 50px;
+    }
+    .input-group-mail {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+    }
+    .labels {
+        display: none;
+    }
+    .pin {
+        display: none;
+    }
+}
+
+/* animation */
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.volume {
+    animation: pulse 1s linear infinite;
+}
